@@ -1,0 +1,160 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    DISCLAIMER:
+    Our system is just a PROTOTYPE	and cannot be used to plan real
+
+    -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.karan.scubadive.
+                            SecondActivity$PlaceholderFragment"
+    android:weightSum="1"
+    android:background="#ffbeecff"
+    android:id="@+id/secondLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surface time"
+        android:id="@+id/textView3"
+        android:textSize="18dp"
+        android:textColor="#ff121212"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-25dp"
+        android:backgroundTint="#fffbfff6"
+        android:background="#ffffffff" />
+    <!-- Spinner Dropdown -->
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="25dip"
+
+        android:background="#fffffc3d" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btnNext"
+        android:textColor="#ff353535"
+        android:textSize="22dp"
+        android:background="#ffff7e67"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now Pressure group  "
+        android:id="@+id/btnNewGroup"
+        android:textSize="18dp"
+        android:background="#ffff7e67"
+        android:textColor="#ff353535"
+        android:layout_above="@+id/btnNext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="   "
+        android:id="@+id/textNewGroup"
+        android:layout_alignBottom="@+id/btnNewGroup"
+        android:layout_alignTop="@+id/btnNewGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnNewGroup"
+        android:layout_toEndOf="@+id/btnNewGroup"
+        android:textAlignment="center"
+        android:background="#ffffffff" />
+
+    <!--EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSurface"
+        android:textColor="#ff141414"
+        android:background="#ffffffff"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/textNewGroup"
+        android:layout_alignStart="@+id/textNewGroup"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/editText3"
+        android:layout_toStartOf="@+id/editText3" /-->
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Pressure Group"
+        android:id="@+id/button"
+        android:textColor="#ff353535"
+        android:background="#ffff7e67"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:text="  "
+        android:textSize="20dp"
+        android:layout_alignParentEnd="true"
+        android:background="#fffdf8ff"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/btnNewGroup"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toRightOf="@+id/btnNewGroup" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:inputType="none"
+        android:background="#fffff9b7"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/textNewGroup"
+        android:layout_alignEnd="@+id/textNewGroup"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_alignTop="@+id/editSurface" /-->
+
+
+</RelativeLayout>
